@@ -8,7 +8,7 @@ Commands:
   - `switchToTemplate`
 
 Bind these to keyboard shortcut for quick access, e.g. Alt+Shift+R for switchToRoute,
-Alt+Shift+Cfor switchToControllerOrComponent and Alt+Shift+T for switchToTemplate.
+Alt+Shift+C for switchToControllerOrComponent and Alt+Shift+T for switchToTemplate.
 
 ## Similar extensions
 
