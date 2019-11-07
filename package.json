@@ -1,0 +1,48 @@
+{
+	"name": "ember-pods-switch",
+	"displayName": "ember-pods-switch",
+	"description": "Switch between Ember files in a POD structure",
+	"version": "0.0.1",
+	"publisher": "sovietspaceship",
+	"repository": "https://github.com/sovietspaceship/ember-pods-switch",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.switchToRoute",
+		"onCommand:extension.switchToControllerOrComponent",
+		"onCommand:extension.switchToTemplate"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.switchToRoute",
+				"title": "Switch To Route"
+			},
+			{
+				"command": "extension.switchToControllerOrComponent",
+				"title": "Switch To Controller"
+			},
+			{
+				"command": "extension.switchToTemplate",
+				"title": "Switch To Template"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^10.14.17",
+		"@types/vscode": "^1.34.0",
+		"tslint": "^5.16.0",
+		"typescript": "^3.5.1"
+	}
+}
